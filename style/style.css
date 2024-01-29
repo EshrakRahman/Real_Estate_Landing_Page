@@ -17,12 +17,207 @@
     --primary-bg-color: #F5F5F5;
     --card-bag-color: #DEDCDA;
     --light-background: #F8F9FE;
+    --text-light: #8E8E8E;
+    --bg-white: #fff;
+    --title-color: #1F2744;
 
-/*    Spacing style */
+
+    /*    Spacing style */
 
     --spacing-sm: 8px;
     --spacing-md: 16px;
     --spacing-lg: 32px;
     --spacing-xl: 64px;
+    --standard-width: 1144px;
 
 }
+
+body {
+    font-family: var(--primary-font-family);
+    color: var(--text-light);
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: var(--spacing-sm);
+    background-color: #F5F5F5;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: var(--standard-width);
+}
+.title-color {
+    color: var(--title-color);
+}
+
+.button-with-bg {
+    padding: 12px 45px;
+    margin-left: var(--spacing-lg);
+    background-color: var(--primary-acent-color);
+    color: var(--bg-white);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    max-width: 100px;
+    border: 1px solid var(--primary-acent-color);
+    text-decoration: none;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.button-with-bg:hover {
+    background-color: var(--bg-white);
+    color: var(--primary-acent-color);
+    border: 1px solid var(--primary-acent-color);
+}
+
+.button-without-bg {
+    border: none;
+    background-color: transparent;
+    color: var(--primary-acent-color);
+    font-size: var(--font-size-regular);
+    cursor: pointer;
+    transition: transform .3s ease;
+
+}
+
+.button-without-bg:hover {
+    transform: scale(1.05);
+}
+
+.square-tag {
+    padding: 12px 25px;
+    background-color: var(--light-background);
+    max-width: 120px;
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-size-md);
+    color: var(--primary-acent-color);
+}
+/* Global css end */
+
+
+/* Header section */
+
+.header-section {
+    width: 100%;
+    height: 806px;
+}
+
+.navbar {
+    width: 100%;
+    height: 120px;
+    padding: var(--spacing-md) 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.navbar .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a{
+    padding: 0 calc(var(--spacing-md)* 1.8);
+    text-decoration: none;
+    color: var(--text-light);
+    font-size: var(--font-size-regular);
+    font-weight: 500;
+    transition: transform .3s ease;
+}
+
+.navbar a:hover {
+    color: var(--primary-acent-color);
+    transform: scale(1.05);
+}
+
+.navbar .navbar-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: var(--spacing-xl);
+}
+
+.header-features-section .feature-img {
+    position: absolute; /* position to the body */
+    top: 0;
+    left: 50%;
+    z-index: -1;
+}
+
+.header-features-section .feature-title {
+    font-family: var(--title-font-family);
+    font-weight: bold;
+    font-size: var(--h1-font-size);
+    width: 60%;
+    margin: var(--spacing-lg) 0;
+}
+
+.header-features-section .feature-description {
+    font-size: var(--font-size-regular);
+    width: 45%;
+    margin: 0 0 var(--spacing-lg) 0;
+}
+
+.feature-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.form-title  {
+    display: flex;
+    margin-bottom: 0;
+
+}
+
+.form-title .buy-section, .rent-section {
+    height: 70px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: var(--primary-acent-color);
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    margin-bottom: 0;
+    /*line-height: 1.5%;*/
+}
+
+.form-title .rent-section {
+    background-color: transparent;
+    margin-left: 0;
+}
+
+
+.search-bar {
+    display: flex;
+    gap: var(--spacing-xl);
+    height: 120px;
+    width: 75%;
+    background-color: var(--bg-white);
+    margin: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    /*margin-left: var(--spacing-md);*/
+}
+
+.search-bar .location {
+    margin-left: var(--spacing-md);
+}
+
+.search-bar .title-color {
+    font-size: var(--font-size-md);
+}
+
