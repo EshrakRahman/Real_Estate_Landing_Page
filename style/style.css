@@ -1,0 +1,28 @@
+:root {
+    /* Font style */
+
+    --primary-font-family: 'Poppins', sans-serif;
+    --title-font-family: 'Rubik', sans-serif;
+    --h1-font-size: 64px;
+    --h2-font-size: 48px;
+    --font-size-semibold-1: 28px;
+    --font-size-semibold-2: 24px;
+    --font-size-md: 18px;
+    --font-size-regular: 16px;
+    --font-size-small: 12px;
+
+/*    Color style */
+
+    --primary-acent-color: #69B99D;
+    --primary-bg-color: #F5F5F5;
+    --card-bag-color: #DEDCDA;
+    --light-background: #F8F9FE;
+
+/*    Spacing style */
+
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+    --spacing-xl: 64px;
+
+}
