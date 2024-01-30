@@ -99,7 +99,17 @@ body {
     justify-content: center;
     font-size: var(--font-size-md);
     color: var(--primary-acent-color);
+    text-transform: uppercase;
 }
+
+.subtitle {
+    font-family: var(--title-font-family);
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #054457;
+    margin-bottom: 16px;
+}
+
 /* Global css end */
 
 
@@ -234,12 +244,8 @@ main {
     padding: var(--spacing-xl) 0;
 }
 
-.recommendation-section .recommendation-title {
-    font-family: var(--title-font-family);
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: #054457;
-    margin-bottom: 16px;
+.recommendation-section .subtitle {
+
 }
 
 .recommendation-section .recommendation-description {
@@ -355,4 +361,144 @@ main {
 .recommendation-section .send-inquiry:hover {
     background-color: var(--primary-acent-color);
     color: var(--bg-white);
+}
+
+/* Feature css */
+.feature-section {
+    width: 100%;
+    height: 910px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.feature-section .square-tag {
+    max-width: 150px;
+    margin-top: var(--spacing-xl);
+}
+
+.feature-section .subtitle {
+    margin: var(--spacing-md) 0 var(--spacing-xl) 0;
+    width: 45%;
+}
+
+.feature-section .feature-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature-section .feature-cards .card {
+    width: 340px;
+    height: 268px;
+    margin-bottom: var(--spacing-xl);
+
+}
+
+.feature-cards .feature-card-subtitle {
+    color: #054457;
+    font-size: 1.8rem;
+    margin: var(--spacing-md) 0;
+}
+
+/* About css */
+.about-section {
+    width: 100%;
+    height: 970px;
+    background-color: var(--bg-white);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /*margin: 150px 0;*/
+}
+
+.about-section .wrapper {
+    margin: calc(var(--spacing-xl) * 4) 0;
+
+}
+.about-section .two-columns .col-left .review-img {
+}
+.about-section .floating-review {
+    width: 175px;
+    height: 252px;
+    background-color: var(--bg-white);
+    position: absolute;
+    top: 16%;
+    left: 17%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.about-section .floating-review .floating-icon {
+    position: absolute;
+    top: -9%;
+}
+
+.about-section .floating-review .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-section .floating-review .details .score {
+    color: #054457;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.about-section .floating-review .floating-subtitle {
+    color: #A6A6A6;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: var(--spacing-sm);
+}
+.about-section .floating-review .details p {
+    margin:  0;
+}
+
+.about-section .two-columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 470px;
+    position: relative;
+    gap: var(--spacing-xl);
+}
+
+.about-section .two-columns .total-sales {
+    width: 525px;
+    height: 82px;
+    background-color: var(--bg-white);
+    position: absolute;
+    bottom: 0;
+    right: 534.68px;
+    display: flex;
+    justify-content: space-around;
+}
+.about-section .property-sales,
+.about-section .apartment-sales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.about-section .property-sales .sales-number,
+.about-section .apartment-sales .sales-number {
+    color: #054457;
+    font-size: 3rem;
+    font-weight: 500;
+    margin: var(--spacing-md) 0;
+}
+.about-section .property-sales .property-sale-heading,
+.about-section .apartment-sales .apartment-rent-heading {
+    color: #A6A6A6;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 40%;
 }
