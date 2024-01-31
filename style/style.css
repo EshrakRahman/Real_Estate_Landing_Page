@@ -406,7 +406,7 @@ main {
 /* About css */
 .about-section {
     width: 100%;
-    height: 970px;
+    height: 800px;
     background-color: var(--bg-white);
     display: flex;
     justify-content: center;
@@ -501,4 +501,20 @@ main {
     font-size: 1rem;
     font-weight: 400;
     width: 40%;
+}
+
+.about-section .two-columns .col-right .square-tag{
+    margin: var(--spacing-xl) 0 var(--spacing-md) 0;
+}
+
+.about-section .col-right .about-details .subtitle {
+    /*width: 70%;*/
+    font-size: 2.7rem;
+    margin: var(--spacing-md) 0;
+}
+
+.about-details .button-with-bg {
+    padding: 20px 50px;
+    max-width: 250px;
+    margin-left: 0;
 }
