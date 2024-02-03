@@ -419,6 +419,7 @@ main {
 
 }
 .about-section .two-columns .col-left .review-img {
+    /*position: relative;*/
 }
 .about-section .floating-review {
     width: 175px;
@@ -517,4 +518,203 @@ main {
     padding: 20px 50px;
     max-width: 250px;
     margin-left: 0;
+}
+
+/* Testimonial css */
+
+.testimonial-section {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    background-color: var(--bg-white);
+    width: 100%;
+    height: 720px;
+}
+
+.testimonial-section .info .square-tag {
+    max-width: 250px;
+}
+
+.testimonial-section .headings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.testimonial-section .subtitle {
+    margin: var(--spacing-sm) 0;
+}
+
+.testimonial-section .links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--primary-acent-color);
+    font-size: 1.2rem;
+    transition: transform .3s ease;
+}
+
+.testimonial-section .links:hover {
+    transform: scale(1.025);
+    cursor: pointer;
+}
+.testimonial-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.testimonial-cards .card {
+    width: 376px;
+    height: 340px;
+    background-color: var(--bg-white);
+    border: 1px solid #DEDCDA;
+    padding: var(--spacing-md);
+}
+
+.testimonial-cards .card .quotes-icon {
+    margin: 0;
+}
+
+.testimonial-cards .card .subtitle {
+    font-size: 1.3rem;
+    color: #1F2744;
+    margin: var(--spacing-md) 0;
+}
+
+.testimonial-cards .card .description {
+    color: #1F2744;
+    font-size: 1rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+.testimonial-cards .card .profile {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-self: center;
+}
+
+.testimonial-cards .card .profile img {
+    /*object-fit: cover;*/
+    width: auto;
+    height: 60px;
+}
+
+.testimonial-cards .card .profile .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial-cards .card .profile .text-content p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer section */
+
+.footer-section {
+    display: flex;
+    justify-content: center;
+    /*background-color: var(--);*/
+}
+
+.footer-section .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+}
+
+.footer-section .col-left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: calc(var(--spacing-xl)*2) 0;
+}
+
+.footer-section .col-left img {
+    width: 114px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.footer-section .col-left .description {
+    width: 75%;
+    color:#1F2744 ;
+}
+
+.footer-section .col-left form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-section .col-left form label {
+    color: #1F2744;
+    font-size: 1.2rem;
+    margin: var(--spacing-md) 0;
+}
+
+.footer-section .col-left form input[type = "email"] {
+    padding: 20px 0 ;
+    width: 340px;
+    border: 1px solid transparent;;
+    /*position: relative;*/
+}
+
+.footer-section .col-left form input[type = "email"]::placeholder {
+    padding-left: var(--spacing-md);
+    color: #D7D7D7;
+}
+
+.footer-section .col-left form input[type = "submit"] {
+    padding: 20px 30px ;
+    background-color: var(--primary-acent-color);
+    color: white;
+    border: 1px solid transparent;;
+
+    transition: .3s ease;
+}
+
+.footer-section .col-left form input[type = "submit"]:hover {
+    border: 1px solid var(--primary-acent-color);
+    background-color: var(--bg-white);
+    color: var(--primary-acent-color);
+    cursor: pointer;
+}
+
+.footer-section .col-right {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section .col-right .group {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+
+}
+
+.footer-section .col-right .group .heading{
+    color: #0B2E29;
+    font-size: 1.2rem;
+    /*margin: 0 0 var(--spacing-md) 0;*/
+}
+
+.footer-section .col-right .group a {
+    text-decoration: none;
+    margin: var(--spacing-md) 0;
+    color: #575757;
+    transition: .3s ease;
+}
+
+
+.footer-section .col-right .group a:hover {
+    text-decoration: underline;
+    color: var(--primary-acent-color);
 }
