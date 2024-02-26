@@ -718,3 +718,28 @@ main {
     text-decoration: underline;
     color: var(--primary-acent-color);
 }
+
+/* Responsive css */
+@media screen and (max-width: 985px) {
+    .navbar {
+        margin: 0 10px;
+    }
+    .navbar a {
+        padding: 0 20px;
+    }
+
+    .navbar .navbar-buttons {
+        margin: 0 var(--spacing-sm);
+    }
+    .header-features-section .feature-title {
+        font-size: 48px;
+    }
+    .search-bar {
+        gap: var(--spacing-sm);
+        justify-content: space-between;
+
+    }
+    .header-features-section .button-with-bg {
+        margin: var(--spacing-md);
+    }
+}
